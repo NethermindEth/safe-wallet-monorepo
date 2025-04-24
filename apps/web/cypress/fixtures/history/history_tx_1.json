@@ -1,16 +1,23 @@
 {
   "count": 23,
-  "next": "https://safe-client.staging.5afe.dev/v1/chains/11155111/safes/0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb/transactions/history?timezone=Europe%2FBerlin&trusted=false&imitation=true&cursor=limit%3D20%26offset%3D20",
+  "next": "https://safe-ui.surge.wtf/cgw/v1/chains/11155111/safes/0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb/transactions/history?timezone=Europe%2FBerlin&trusted=false&imitation=true&cursor=limit%3D20%26offset%3D20",
   "previous": null,
   "results": [
-    { "type": "DATE_LABEL", "timestamp": 1742302260000 },
+    {
+      "type": "DATE_LABEL",
+      "timestamp": 1742302260000
+    },
     {
       "type": "TRANSACTION",
       "transaction": {
         "txInfo": {
           "type": "Custom",
           "humanDescription": null,
-          "to": { "value": "0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb", "name": "GnosisSafeProxy", "logoUri": null },
+          "to": {
+            "value": "0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb",
+            "name": "GnosisSafeProxy",
+            "logoUri": null
+          },
           "dataSize": "0",
           "value": "0",
           "methodName": null,
@@ -32,17 +39,31 @@
       },
       "conflictType": "None"
     },
-    { "type": "DATE_LABEL", "timestamp": 1742204292000 },
+    {
+      "type": "DATE_LABEL",
+      "timestamp": 1742204292000
+    },
     {
       "type": "TRANSACTION",
       "transaction": {
         "txInfo": {
           "type": "Transfer",
           "humanDescription": null,
-          "sender": { "value": "0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb", "name": null, "logoUri": null },
-          "recipient": { "value": "0x96D4c6fFC338912322813a77655fCC926b9A5aC5", "name": null, "logoUri": null },
+          "sender": {
+            "value": "0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb",
+            "name": null,
+            "logoUri": null
+          },
+          "recipient": {
+            "value": "0x96D4c6fFC338912322813a77655fCC926b9A5aC5",
+            "name": null,
+            "logoUri": null
+          },
           "direction": "OUTGOING",
-          "transferInfo": { "type": "NATIVE_COIN", "value": "100000000000000" }
+          "transferInfo": {
+            "type": "NATIVE_COIN",
+            "value": "100000000000000"
+          }
         },
         "id": "multisig_0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb_0xcfbe040521dd80d43f408c7fd3ce7d80f21e8916a04a56ff0fe5cd14eb1a508f",
         "timestamp": 1742204292000,
@@ -59,7 +80,10 @@
       },
       "conflictType": "None"
     },
-    { "type": "DATE_LABEL", "timestamp": 1720167780000 },
+    {
+      "type": "DATE_LABEL",
+      "timestamp": 1720167780000
+    },
     {
       "type": "TRANSACTION",
       "transaction": {
@@ -75,12 +99,21 @@
                 "value": "0x4fe7164d7cA511Ab35520bb14065F1693240dC90",
                 "valueDecoded": null
               },
-              { "name": "_threshold", "type": "uint256", "value": "2", "valueDecoded": null }
+              {
+                "name": "_threshold",
+                "type": "uint256",
+                "value": "2",
+                "valueDecoded": null
+              }
             ]
           },
           "settingsInfo": {
             "type": "ADD_OWNER",
-            "owner": { "value": "0x4fe7164d7cA511Ab35520bb14065F1693240dC90", "name": null, "logoUri": null },
+            "owner": {
+              "value": "0x4fe7164d7cA511Ab35520bb14065F1693240dC90",
+              "name": null,
+              "logoUri": null
+            },
             "threshold": 2
           }
         },
@@ -99,14 +132,21 @@
       },
       "conflictType": "None"
     },
-    { "type": "DATE_LABEL", "timestamp": 1702636380000 },
+    {
+      "type": "DATE_LABEL",
+      "timestamp": 1702636380000
+    },
     {
       "type": "TRANSACTION",
       "transaction": {
         "txInfo": {
           "type": "Transfer",
           "humanDescription": null,
-          "sender": { "value": "0x96D4c6fFC338912322813a77655fCC926b9A5aC5", "name": null, "logoUri": null },
+          "sender": {
+            "value": "0x96D4c6fFC338912322813a77655fCC926b9A5aC5",
+            "name": null,
+            "logoUri": null
+          },
           "recipient": {
             "value": "0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb",
             "name": "GnosisSafeProxy",
@@ -134,7 +174,10 @@
       },
       "conflictType": "None"
     },
-    { "type": "DATE_LABEL", "timestamp": 1701851760000 },
+    {
+      "type": "DATE_LABEL",
+      "timestamp": 1701851760000
+    },
     {
       "type": "TRANSACTION",
       "transaction": {
@@ -143,9 +186,19 @@
           "humanDescription": "Change threshold to 2",
           "dataDecoded": {
             "method": "changeThreshold",
-            "parameters": [{ "name": "_threshold", "type": "uint256", "value": "2", "valueDecoded": null }]
+            "parameters": [
+              {
+                "name": "_threshold",
+                "type": "uint256",
+                "value": "2",
+                "valueDecoded": null
+              }
+            ]
           },
-          "settingsInfo": { "type": "CHANGE_THRESHOLD", "threshold": 2 }
+          "settingsInfo": {
+            "type": "CHANGE_THRESHOLD",
+            "threshold": 2
+          }
         },
         "id": "multisig_0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb_0x46eb9b5370d38a676d0bc895dbd8e7e3c9544f121c7019bfb0e632597d7be7d5",
         "timestamp": 1701851760000,
@@ -162,7 +215,10 @@
       },
       "conflictType": "None"
     },
-    { "type": "DATE_LABEL", "timestamp": 1701418524000 },
+    {
+      "type": "DATE_LABEL",
+      "timestamp": 1701418524000
+    },
     {
       "type": "TRANSACTION",
       "transaction": {
@@ -332,7 +388,10 @@
             "logoUri": null
           },
           "direction": "INCOMING",
-          "transferInfo": { "type": "NATIVE_COIN", "value": "1000000000000000" }
+          "transferInfo": {
+            "type": "NATIVE_COIN",
+            "value": "1000000000000000"
+          }
         },
         "id": "transfer_0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb_i1f54e48bccaa3d304908eee98e2d6ba3258c841bd39a84fedc112d5c6f049d910,0,0,0,0,0,1",
         "timestamp": 1701417900000,
@@ -360,7 +419,10 @@
             "logoUri": null
           },
           "direction": "INCOMING",
-          "transferInfo": { "type": "NATIVE_COIN", "value": "1000000000000000" }
+          "transferInfo": {
+            "type": "NATIVE_COIN",
+            "value": "1000000000000000"
+          }
         },
         "id": "transfer_0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb_i1f54e48bccaa3d304908eee98e2d6ba3258c841bd39a84fedc112d5c6f049d910,0,0,0,0,0,0",
         "timestamp": 1701417900000,
@@ -409,14 +471,21 @@
         "txInfo": {
           "type": "Transfer",
           "humanDescription": null,
-          "sender": { "value": "0x96D4c6fFC338912322813a77655fCC926b9A5aC5", "name": null, "logoUri": null },
+          "sender": {
+            "value": "0x96D4c6fFC338912322813a77655fCC926b9A5aC5",
+            "name": null,
+            "logoUri": null
+          },
           "recipient": {
             "value": "0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb",
             "name": "GnosisSafeProxy",
             "logoUri": null
           },
           "direction": "INCOMING",
-          "transferInfo": { "type": "NATIVE_COIN", "value": "500000000000000000" }
+          "transferInfo": {
+            "type": "NATIVE_COIN",
+            "value": "500000000000000000"
+          }
         },
         "id": "transfer_0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb_i9cf7595977c9087f31aedc68c2554c7c898486aa132aa6bd063906a5d8564110",
         "timestamp": 1701417156000,
@@ -474,7 +543,10 @@
       },
       "conflictType": "None"
     },
-    { "type": "DATE_LABEL", "timestamp": 1701345096000 },
+    {
+      "type": "DATE_LABEL",
+      "timestamp": 1701345096000
+    },
     {
       "type": "TRANSACTION",
       "transaction": {
@@ -483,9 +555,19 @@
           "humanDescription": "Change threshold to 1",
           "dataDecoded": {
             "method": "changeThreshold",
-            "parameters": [{ "name": "_threshold", "type": "uint256", "value": "1", "valueDecoded": null }]
+            "parameters": [
+              {
+                "name": "_threshold",
+                "type": "uint256",
+                "value": "1",
+                "valueDecoded": null
+              }
+            ]
           },
-          "settingsInfo": { "type": "CHANGE_THRESHOLD", "threshold": 1 }
+          "settingsInfo": {
+            "type": "CHANGE_THRESHOLD",
+            "threshold": 1
+          }
         },
         "id": "multisig_0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb_0x94d7f35334ef6f52f442ed2b498b085bd2a4d5b3b66d7878a5d2bb85e384b88e",
         "timestamp": 1701345096000,
@@ -510,9 +592,19 @@
           "humanDescription": "Change threshold to 2",
           "dataDecoded": {
             "method": "changeThreshold",
-            "parameters": [{ "name": "_threshold", "type": "uint256", "value": "2", "valueDecoded": null }]
+            "parameters": [
+              {
+                "name": "_threshold",
+                "type": "uint256",
+                "value": "2",
+                "valueDecoded": null
+              }
+            ]
           },
-          "settingsInfo": { "type": "CHANGE_THRESHOLD", "threshold": 2 }
+          "settingsInfo": {
+            "type": "CHANGE_THRESHOLD",
+            "threshold": 2
+          }
         },
         "id": "multisig_0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb_0x87163acb6b21520a00b70f7d42bdbdf92b7970d3672e0d97d1072dbb6e13c85e",
         "timestamp": 1701344928000,
@@ -550,12 +642,21 @@
                 "value": "0x8a39cE4E27C326B87B75AaFf820D442311CD8E4E",
                 "valueDecoded": null
               },
-              { "name": "_threshold", "type": "uint256", "value": "1", "valueDecoded": null }
+              {
+                "name": "_threshold",
+                "type": "uint256",
+                "value": "1",
+                "valueDecoded": null
+              }
             ]
           },
           "settingsInfo": {
             "type": "REMOVE_OWNER",
-            "owner": { "value": "0x8a39cE4E27C326B87B75AaFf820D442311CD8E4E", "name": null, "logoUri": null },
+            "owner": {
+              "value": "0x8a39cE4E27C326B87B75AaFf820D442311CD8E4E",
+              "name": null,
+              "logoUri": null
+            },
             "threshold": 1
           }
         },
@@ -605,8 +706,16 @@
           },
           "settingsInfo": {
             "type": "SWAP_OWNER",
-            "oldOwner": { "value": "0x01A9F68e339da12565cfBc47fe7D6EdEcB11C46f", "name": null, "logoUri": null },
-            "newOwner": { "value": "0x8a39cE4E27C326B87B75AaFf820D442311CD8E4E", "name": null, "logoUri": null }
+            "oldOwner": {
+              "value": "0x01A9F68e339da12565cfBc47fe7D6EdEcB11C46f",
+              "name": null,
+              "logoUri": null
+            },
+            "newOwner": {
+              "value": "0x8a39cE4E27C326B87B75AaFf820D442311CD8E4E",
+              "name": null,
+              "logoUri": null
+            }
           }
         },
         "id": "multisig_0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb_0xd7a2578ba2e610959961ad9816115d33521d7e7904797cece08051c38fa3af6f",
@@ -630,14 +739,21 @@
         "txInfo": {
           "type": "Transfer",
           "humanDescription": null,
-          "sender": { "value": "0x96D4c6fFC338912322813a77655fCC926b9A5aC5", "name": null, "logoUri": null },
+          "sender": {
+            "value": "0x96D4c6fFC338912322813a77655fCC926b9A5aC5",
+            "name": null,
+            "logoUri": null
+          },
           "recipient": {
             "value": "0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb",
             "name": "GnosisSafeProxy",
             "logoUri": null
           },
           "direction": "INCOMING",
-          "transferInfo": { "type": "NATIVE_COIN", "value": "500000000000000" }
+          "transferInfo": {
+            "type": "NATIVE_COIN",
+            "value": "500000000000000"
+          }
         },
         "id": "transfer_0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb_i2339acf27d3ed017e8b25bb4d9f83439a11a37a4b1a121ecb46284c5143c058a",
         "timestamp": 1701344064000,
@@ -695,12 +811,21 @@
                 "value": "0x01A9F68e339da12565cfBc47fe7D6EdEcB11C46f",
                 "valueDecoded": null
               },
-              { "name": "_threshold", "type": "uint256", "value": "1", "valueDecoded": null }
+              {
+                "name": "_threshold",
+                "type": "uint256",
+                "value": "1",
+                "valueDecoded": null
+              }
             ]
           },
           "settingsInfo": {
             "type": "ADD_OWNER",
-            "owner": { "value": "0x01A9F68e339da12565cfBc47fe7D6EdEcB11C46f", "name": null, "logoUri": null },
+            "owner": {
+              "value": "0x01A9F68e339da12565cfBc47fe7D6EdEcB11C46f",
+              "name": null,
+              "logoUri": null
+            },
             "threshold": 1
           }
         },
@@ -757,7 +882,11 @@
         "txInfo": {
           "type": "Custom",
           "humanDescription": null,
-          "to": { "value": "0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb", "name": "GnosisSafeProxy", "logoUri": null },
+          "to": {
+            "value": "0x5912f6616c84024cD1aff0D5b55bb36F5180fFdb",
+            "name": "GnosisSafeProxy",
+            "logoUri": null
+          },
           "dataSize": "0",
           "value": "0",
           "methodName": null,
@@ -785,7 +914,11 @@
         "txInfo": {
           "type": "Custom",
           "humanDescription": null,
-          "to": { "value": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134", "name": "AllowanceModule", "logoUri": null },
+          "to": {
+            "value": "0xCFbFaC74C26F8647cBDb8c5caf80BB5b32E43134",
+            "name": "AllowanceModule",
+            "logoUri": null
+          },
           "dataSize": "68",
           "value": "0",
           "methodName": "deleteAllowance",

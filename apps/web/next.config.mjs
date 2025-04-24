@@ -47,7 +47,8 @@ const withPWA = withPWAInit({
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // static site export
+  // Conditionally set output to 'export' only in production
+  output: process.env.NODE_ENV === 'production' ? 'export' : undefined,
 
   transpilePackages: ['@safe-global/store'],
   images: {
@@ -60,6 +61,17 @@ const nextConfig = {
   eslint: {
     dirs: ['src', 'cypress'],
   },
+
+  // Add rewrites for API proxy
+  async rewrites() {
+    return [
+      {
+        source: '/api/cgw/:path*',
+        destination: 'https://safe-ui.surge.wtf/cgw/:path*',
+      },
+    ];
+  },
+
   experimental: {
     optimizePackageImports: [
       '@mui/material',

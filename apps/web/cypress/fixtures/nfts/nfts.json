@@ -1,6 +1,6 @@
 {
   "count": 16,
-  "next": "https://safe-client.staging.5afe.dev/v2/chains/11155111/safes/0xBd69b0a9DC90eB6F9bAc3E4a5875f437348b6415/collectibles?cursor=limit%3D10%26offset%3D10",
+  "next": "https://safe-ui.surge.wtf/cgw/v2/chains/11155111/safes/0xBd69b0a9DC90eB6F9bAc3E4a5875f437348b6415/collectibles?cursor=limit%3D10%26offset%3D10",
   "previous": null,
   "results": [
     {

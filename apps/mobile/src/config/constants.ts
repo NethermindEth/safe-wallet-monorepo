@@ -14,7 +14,7 @@ export const COMING_SOON_TITLE = 'Coming soon'
 
 export const GATEWAY_URL_PRODUCTION =
   process.env.EXPO_PUBLIC_GATEWAY_URL_PRODUCTION || 'https://safe-client.safe.global'
-export const GATEWAY_URL_STAGING = process.env.EXPO_PUBLIC_GATEWAY_URL_STAGING || 'https://safe-client.staging.5afe.dev'
+export const GATEWAY_URL_STAGING = process.env.EXPO_PUBLIC_GATEWAY_URL_STAGING || 'https://safe-ui.surge.wtf/cgw'
 export const GATEWAY_URL = isProduction ? GATEWAY_URL_PRODUCTION : GATEWAY_URL_STAGING
 
 /**

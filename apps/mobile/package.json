@@ -172,5 +172,6 @@
     "typescript-eslint": "^8.24.1",
     "webpack": "^5.97.1"
   },
-  "private": true
+  "private": true,
+  "proxy": "https://safe-ui.surge.wtf"
 }
