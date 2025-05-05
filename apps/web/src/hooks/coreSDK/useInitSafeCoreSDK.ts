@@ -33,13 +33,14 @@ export const useInitSafeCoreSDK = () => {
       provider: web3ReadOnly,
       chainId: safe.chainId,
       address: safe.address.value,
-      version: safe.version,
+      version: '1.3.0',
       implementationVersionState: safe.implementationVersionState,
       implementation: safe.implementation.value,
       undeployedSafe,
     })
       .then(setSafeSDK)
       .catch((_e) => {
+        console.log('safe init error', _e)
         const e = asError(_e)
         dispatch(
           showNotification({

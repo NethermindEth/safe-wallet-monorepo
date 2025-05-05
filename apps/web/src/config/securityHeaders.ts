@@ -16,7 +16,7 @@ export const ContentSecurityPolicy = `
  script-src 'self' 'unsafe-inline' https://*.getbeamer.com https://www.googletagmanager.com https://*.ingest.sentry.io https://sentry.io ${
    !IS_PRODUCTION || isCypress
      ? "'unsafe-eval'" // Dev server and cypress need unsafe-eval
-     : "'wasm-unsafe-eval'"
+     : "'unsafe-eval'"
  };
  frame-src http: https:;
  style-src 'self' 'unsafe-inline' https://*.getbeamer.com https://*.googleapis.com;
