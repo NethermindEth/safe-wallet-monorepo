@@ -8359,12 +8359,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@safe-global/safe-deployments@github:NethermindEth/safe-deployments#feat/add-hoodi":
+"@safe-global/safe-deployments@github:NethermindEth/safe-deployments#feat/hoodi-surge-1.4.1":
   version: 1.37.31
-  resolution: "@safe-global/safe-deployments@https://github.com/NethermindEth/safe-deployments.git#commit=d1b39c2b3f5413633d0b510dd18195bc3bcbae55"
+  resolution: "@safe-global/safe-deployments@https://github.com/NethermindEth/safe-deployments.git#commit=f128a2bde99c5240ba02ea07a2d324ce8e638357"
   dependencies:
     semver: "npm:^7.6.2"
-  checksum: 10/deace3eb87ed22938b6791bc0f50fc064ff9b94ca5c212ed5c0d7e581f5a5a7d13251083224f84f47d9b756576bb3d11a0dcdb11fe32b9664f8b571cd2d8640b
+  checksum: 10/d685c108b1ce3f74b08e3b5d881526ee47193f3874dc36726ec1b7bcb502c2b86fecb10ca9594234071b0b4dcc9ef95b68af881331127f82994cf2968f4f4287
   languageName: node
   linkType: hard
 

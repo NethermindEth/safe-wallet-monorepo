@@ -33,7 +33,7 @@ export const useInitSafeCoreSDK = () => {
       provider: web3ReadOnly,
       chainId: safe.chainId,
       address: safe.address.value,
-      version: '1.3.0',
+      version: '1.4.1',
       implementationVersionState: safe.implementationVersionState,
       implementation: safe.implementation.value,
       undeployedSafe,
