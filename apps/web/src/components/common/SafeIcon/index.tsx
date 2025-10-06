@@ -32,7 +32,7 @@ export const ChainIcon = ({ chainId }: { chainId: string }) => {
 
   return (
     <img
-      src="/images/networks/surge.png"
+      src="/images/networks/ethereum.png"
       alt={`${chainConfig.chainName} Logo`}
       width={40}
       height={40}
