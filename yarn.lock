@@ -9518,21 +9518,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@safe-global/safe-deployments@npm:^1.37.35":
-  version: 1.37.35
-  resolution: "@safe-global/safe-deployments@npm:1.37.35"
+"@safe-global/safe-deployments@github:NethermindEth/safe-deployments#feat/add-surge-networks":
+  version: 1.37.46
+  resolution: "@safe-global/safe-deployments@https://github.com/NethermindEth/safe-deployments.git#commit=ea661f398efd29adf96544587b82b9165f218bee"
   dependencies:
     semver: "npm:^7.6.2"
-  checksum: 10/a1683e22d9a6e6ea6bdf32b8edfa03f67b79b0884cfa5132b4e01ce0830ebb4479cff6635fcebeaf6ac198119c10b8e679cda6dbb4b81f5dd045494f79ee7a4b
-  languageName: node
-  linkType: hard
-
-"@safe-global/safe-deployments@npm:^1.37.45":
-  version: 1.37.45
-  resolution: "@safe-global/safe-deployments@npm:1.37.45"
-  dependencies:
-    semver: "npm:^7.6.2"
-  checksum: 10/5ee52114ad57a8db93245f0ca37afe8f50b825ad562ffd6b3122f63c55006a0344947473d209331deb3e01296a444ce25a15b5797e28a1f77443df46a5e4ed3f
+  checksum: 10/6272e8a23b1bbd98429434a4de43618fb9508004cb430525ba99e8b4d3fbf169d27705ab5e7d3151375d4a8f08462734022a010fb62b036126869aa104d9b2dc
   languageName: node
   linkType: hard
 
