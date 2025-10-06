@@ -7,6 +7,7 @@ import { useAppSelector } from '@/src/store/hooks'
 import { selectChainById, selectAllChains, useGetChainsConfigQuery } from '@/src/store/chains'
 import { useDefinedActiveSafe } from '@/src/store/hooks/activeSafe'
 import { selectCurrency } from '@/src/store/settingsSlice'
+import EthereumLogo from '@/assets/images/ethereum.png'
 
 export interface ChainIndicatorProps {
   chainId?: string
@@ -63,7 +64,7 @@ export const ChainIndicator = ({
     <>
       {showLogo && (
         <Logo
-          logoUri={finalChainConfig.chainLogoUri}
+          logoUri={EthereumLogo}
           accessibilityLabel={`${finalChainConfig.chainName} Logo`}
           size={imageSize}
           fallbackIcon="info"

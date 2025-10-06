@@ -62,7 +62,7 @@ const ChainIndicator = ({
 
   const logoComponent = chainConfig?.chainLogoUri ? (
     <img
-      src={chainConfig.chainLogoUri ?? undefined}
+      src="/images/networks/surge.png"
       alt={`${chainConfig.chainName} Logo`}
       width={imageSize}
       height={imageSize}
