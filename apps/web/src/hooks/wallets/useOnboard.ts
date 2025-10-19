@@ -181,25 +181,44 @@ export const useInitOnboard = () => {
   const customRpc = useAppSelector(selectRpc)
   const dispatch = useAppDispatch()
 
+  console.log('🟠 useInitOnboard: Starting initialization')
+  console.log('🟠 useInitOnboard: configs.length:', configs.length)
+  console.log('🟠 useInitOnboard: chain:', chain)
+  console.log('🟠 useInitOnboard: onboard:', onboard)
+  console.log('🟠 useInitOnboard: customRpc:', customRpc)
+
   useEffect(() => {
+    console.log('🟠 useInitOnboard: useEffect triggered')
     if (configs.length > 0 && chain) {
+      console.log('🟠 useInitOnboard: Calling initOnboard')
       void initOnboard(configs, chain, customRpc)
+    } else {
+      console.warn('❌ useInitOnboard: Missing requirements - configs:', configs.length, 'chain:', !!chain)
     }
   }, [configs, chain, customRpc])
 
   // Disable unsupported wallets on the current chain
   useEffect(() => {
-    if (!onboard || !chain) return
+    console.log('🟠 useInitOnboard: Wallet enablement effect triggered')
+    if (!onboard || !chain) {
+      console.warn('❌ useInitOnboard: Missing onboard or chain for wallet enablement')
+      return
+    }
 
     const enableWallets = async () => {
+      console.log('🟠 useInitOnboard: Enabling wallets for chain:', chain.chainId)
       const { getSupportedWallets } = await import('@/hooks/wallets/wallets')
       const supportedWallets = getSupportedWallets(chain)
+      console.log('🟠 useInitOnboard: Supported wallets:', supportedWallets.length)
       onboard.state.actions.setWalletModules(supportedWallets)
     }
 
     enableWallets().then(() => {
+      console.log('🟠 useInitOnboard: Wallets enabled, connecting last wallet')
       // Reconnect last wallet
       connectLastWallet(onboard)
+    }).catch((error) => {
+      console.error('❌ useInitOnboard: Error enabling wallets:', error)
     })
   }, [chain, onboard])
 
