@@ -56,7 +56,11 @@ const ConnectWalletButton = ({
 
     } catch (error) {
       console.error('❌ Error in handleConnect:', error)
-      console.error('❌ Error stack:', error.stack)
+      if (error instanceof Error) {
+        console.error('❌ Error stack:', error.stack)
+      } else {
+        console.error('❌ Error details:', String(error))
+      }
     }
   }
 
