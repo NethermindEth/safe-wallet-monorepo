@@ -19,7 +19,9 @@ RUN yarn install --immutable
 RUN yarn after-install
 
 # Set environment variables
-ENV NODE_ENV production
+ENV NODE_OPTIONS="--max-old-space-size=4096"
+ENV DEBUG="*"
+ENV NODE_ENV="development"
 ENV NEXT_TELEMETRY_DISABLED 1
 ENV PORT 3000
 

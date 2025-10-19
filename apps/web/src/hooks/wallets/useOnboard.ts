@@ -118,25 +118,35 @@ export const connectWallet = async (
   onboard: OnboardAPI,
   options?: Parameters<OnboardAPI['connectWallet']>[0],
 ): Promise<WalletState[] | undefined> => {
+  console.log('🟠 connectWallet: called with onboard:', onboard)
+  console.log('🟠 connectWallet: options:', options)
+  console.log('🟠 connectWallet: isConnecting:', isConnecting)
+
   if (isConnecting) {
+    console.warn('❌ connectWallet: already connecting, returning undefined')
     return
   }
 
+  console.log('🟠 connectWallet: setting isConnecting to true')
   isConnecting = true
 
   let wallets: WalletState[] | undefined
 
   try {
+    console.log('🟠 connectWallet: calling onboard.connectWallet...')
     wallets = await onboard.connectWallet(options)
+    console.log('✅ connectWallet: onboard.connectWallet completed, wallets:', wallets)
   } catch (e) {
+    console.error('❌ connectWallet: onboard.connectWallet failed:', e)
     logError(Errors._107, e)
     isConnecting = false
-
     return
   }
 
+  console.log('🟠 connectWallet: setting isConnecting to false')
   isConnecting = false
 
+  console.log('✅ connectWallet: returning wallets:', wallets)
   return wallets
 }
 
