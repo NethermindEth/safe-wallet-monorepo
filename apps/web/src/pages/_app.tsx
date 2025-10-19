@@ -87,7 +87,7 @@ const InitApp = (): null => {
         console.log('🌍 Global click detected on connect-wallet-btn:', {
           isTrusted: e.isTrusted,
           type: e.type,
-          target: target,
+          target,
           timeStamp: e.timeStamp
         })
       }
