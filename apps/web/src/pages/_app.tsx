@@ -51,7 +51,6 @@ import { GATEWAY_URL } from '@/config/gateway'
 import { useDatadog } from '@/services/datadog'
 import useMixpanel from '@/services/analytics/useMixpanel'
 import { AddressBookSourceProvider } from '@/components/common/AddressBookSourceProvider'
-import { useEffect } from 'react'
 
 const reduxStore = makeStore()
 
@@ -78,24 +77,6 @@ const InitApp = (): null => {
   useSafeMsgTracking()
   useBeamer()
   useVisitedSafes()
-
-  // Add this debug monitoring
-  useEffect(() => {
-    const handleGlobalClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement
-      if (target?.getAttribute('data-testid') === 'connect-wallet-btn') {
-        console.log('🌍 Global click detected on connect-wallet-btn:', {
-          isTrusted: e.isTrusted,
-          type: e.type,
-          target,
-          timeStamp: e.timeStamp
-        })
-      }
-    }
-
-    document.addEventListener('click', handleGlobalClick, true)
-    return () => document.removeEventListener('click', handleGlobalClick, true)
-  }, [])
 
   return null
 }
