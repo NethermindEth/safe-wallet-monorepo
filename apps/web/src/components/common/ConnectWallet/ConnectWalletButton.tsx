@@ -1,5 +1,6 @@
 import { Button } from '@mui/material'
 import useConnectWallet from '@/components/common/ConnectWallet/useConnectWallet'
+import { type SyntheticEvent } from 'react'
 
 const ConnectWalletButton = ({
   onConnect,
@@ -14,7 +15,11 @@ const ConnectWalletButton = ({
 }): React.ReactElement => {
   const connectWallet = useConnectWallet()
 
-  const handleConnect = () => {
+  const handleConnect = (e: SyntheticEvent) => {
+    // Prevent Next.js event delegation interference
+    e.stopPropagation()
+    e.preventDefault()
+
     onConnect?.()
     connectWallet()
   }
